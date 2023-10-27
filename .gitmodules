@@ -1,0 +1,3 @@
+[submodule "submodules/WikidataTreeBuilderSPARQL"]
+	path = submodules/WikidataTreeBuilderSPARQL
+	url = https://github.com/petartodorov/WikidataTreeBuilderSPARQL
