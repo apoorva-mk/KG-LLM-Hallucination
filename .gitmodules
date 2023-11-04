@@ -1,3 +1,6 @@
 [submodule "submodules/WikidataTreeBuilderSPARQL"]
 	path = submodules/WikidataTreeBuilderSPARQL
 	url = https://github.com/petartodorov/WikidataTreeBuilderSPARQL
+[submodule "HaluEval"]
+	path = submodules/HaluEval
+	url = https://github.com/RUCAIBox/HaluEval.git
