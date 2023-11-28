@@ -78,7 +78,8 @@ def query_to_kg_embeddings(query):
             wiki_embeddings[ne] = entity_embeddings[entity2id[alias2entity[ne]]]
             cleaned_text = cleaned_text.replace(ne, "")
         except Exception as e:
-            print("KeyError: ", e)
+            pass
+            # print("KeyError: ", e)
     num_of_words = len(word_tokenize(cleaned_text))
     for i in range(num_of_words, 0, -1):
         word_sets = extract_continuous_word_sets(cleaned_text, i)
@@ -87,7 +88,8 @@ def query_to_kg_embeddings(query):
                 wiki_embeddings[word] = entity_embeddings[entity2id[alias2entity[word]]]
                 cleaned_text = cleaned_text.replace(word, "")
             except Exception as e:
-                print("KeyError: ", e)
+                pass
+                # print("KeyError: ", e)
 
     return wiki_embeddings
 
